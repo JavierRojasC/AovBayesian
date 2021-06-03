@@ -1,0 +1,12 @@
+\name{aovbayes}
+\alias{aovbayes}
+\title{aovbayes}
+\usage{
+aovbayes()
+}
+\description{
+aovbayes()
+}
+\examples{
+aovbayes()
+}
