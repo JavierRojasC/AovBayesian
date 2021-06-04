@@ -916,7 +916,7 @@ aovbayes <- function(dataset=FALSE) {
 
 
 
-        data <- list(N=length(dataBY$Dep2),
+        data2 <- list(N=length(dataBY$Dep2),
                      J=length(unique(dataBY$Tratamiento)),
                      response=dataBY$Dep2,
                      predictor=as.numeric(dataBY$Tratamiento),
@@ -924,7 +924,7 @@ aovbayes <- function(dataset=FALSE) {
 
         #fit <- sampling(sm, data=pulpdat, chains=input$chainsnumber,  seed = 12345,iter=input$numberiterations)
         sm <- rstan::sampling(stanmodels$onewaymodel,
-                              data=data, chains=input$chainsnumber,
+                              data=data2, chains=input$chainsnumber,
                               seed = 12345,iter=input$numberiterations)
 
         fit <- sm
